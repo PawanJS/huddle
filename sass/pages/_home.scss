@@ -1,0 +1,85 @@
+.section-features {
+  padding: 10rem 8rem 20rem;
+  position: relative;
+
+  @include respond(phone) {
+    padding: 5rem 5rem 10rem;
+  }
+}
+
+.feature {
+  display: flex;
+  padding: 5rem 8rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.1);
+
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
+
+  @include respond(phone) {
+    padding: 2.5rem;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 5rem;
+  }
+
+  &__text {
+    align-self: center;
+    flex: 0 0 40%;
+
+    @include respond(tab-port) {
+      text-align: center;
+    }
+  }
+
+  &__img {
+    height: 30rem;
+    margin-left: auto;
+
+    @include respond(tab-port) {
+      order: -1;
+      margin-left: 0;
+      height: 100%;
+      width: 100%;
+      margin-bottom: 5rem;
+    }
+  }
+  &__img-left {
+    height: 30rem;
+    margin-right: auto;
+
+    @include respond(tab-port) {
+      order: -1;
+      margin-right: 0;
+      height: 100%;
+      width: 100%;
+      margin-bottom: 5rem;
+    }
+  }
+}
+
+.cta {
+  background-color: $color-white;
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.1);
+  padding: 5rem 8rem;
+  position: absolute;
+  bottom: -12rem;
+  left: 25%;
+
+  @include respond(tab-land) {
+    width: 80%;
+    left: 10%;
+  }
+
+  @include respond(phone) {
+    width: 90%;
+    left: 5%;
+    padding: 3rem 5rem;
+  }
+}

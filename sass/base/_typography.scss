@@ -1,0 +1,34 @@
+body {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: hsl(192, 100%, 9%);
+  font-family: "open sans", sans-serif;
+}
+
+.heading-primary {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 4rem;
+  margin-bottom: 2.75rem;
+}
+.paragraph {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 2.3rem;
+}
+
+.heading-secondary {
+  font-weight: 700;
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+}
+
+.heading-tertiary {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 1.4rem;
+}
+.description {
+  font-size: 1.6rem;
+  color: $color-blue;
+}

@@ -1,0 +1,129 @@
+.footer {
+  font-size: 1.6rem;
+  background-color: $color-cyan-dark;
+  color: $color-white;
+  font-weight: 300;
+
+  &__logo {
+    margin-bottom: 2rem;
+    height: 2.75rem;
+  }
+
+  &__content {
+    padding: 15rem 12rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include respond(tab-port) {
+      display: block;
+    }
+  }
+
+  &__text {
+    padding: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+  }
+}
+
+.contact {
+  flex: 0 0 30%;
+
+  @include respond(tab-port) {
+    margin: 5rem 0;
+  }
+
+  &__address {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+  }
+
+  &__icon {
+    margin-right: 2rem;
+  }
+}
+
+.navigation {
+  &__list {
+    list-style: none;
+
+    @include respond(tab-port) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__list-item {
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__list-link {
+    text-decoration: none;
+    color: inherit;
+    font-weight: inherit;
+    transition: all 0.2s;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}
+
+.social-links {
+  @include respond(tab-port) {
+    text-align: center;
+    margin-top: 5rem;
+  }
+
+  &__icon {
+    fill: $color-white;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    @include respond(tab-port) {
+      width: 3rem;
+      height: 3rem;
+    }
+
+    &:hover {
+      fill: $color-primary;
+    }
+
+    &:not(:last-child) {
+      margin-right: 1rem;
+
+      @include respond(tab-port) {
+        margin-right: 2rem;
+      }
+    }
+  }
+}
+
+.attribution {
+  @include respond(tab-port) {
+    margin-top: 2rem;
+    order: 1;
+  }
+}
+
+.attribution a {
+  color: tomato;
+  text-decoration: none;
+  transition: all 0.2s;
+
+  &:hover {
+    color: $color-primary;
+  }
+}

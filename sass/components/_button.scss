@@ -1,0 +1,66 @@
+.btn {
+  display: inline-block;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 100px;
+  cursor: pointer;
+  font-family: "open sans", sans-serif;
+  box-shadow: 0 0.4rem 3rem rgba(0, 0, 0, 0.2);
+
+  &:hover,
+  &:focus {
+    outline: none;
+    animation: pulsate 1s infinite;
+  }
+}
+
+.header-btn {
+  background: $color-white;
+  padding: 1.2rem 5.5rem;
+  transition: all 0.4s;
+
+  @include respond(phone) {
+    padding: 1rem 3.5rem;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color-primary;
+    color: $color-white;
+  }
+}
+
+.btn-pink {
+  background: $color-primary;
+  color: $color-white;
+  padding: 1.2rem 5.5rem;
+
+  @include respond(phone) {
+    padding: 1.2rem 3.5rem;
+  }
+}
+.btn-cta {
+  background: $color-primary;
+  color: $color-white;
+  padding: 2.2rem 9rem;
+
+  @include respond(phone) {
+    padding: 1.5rem 3.5rem;
+  }
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+}

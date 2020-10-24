@@ -1,0 +1,48 @@
+.header {
+  background: hsl(193, 100%, 96%) url("../images/bg-hero-desktop.svg");
+  background-position: center;
+  background-size: cover;
+  padding: 5rem 10rem;
+
+  @include respond(phone) {
+    padding: 5rem;
+  }
+
+  &__top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+  &-logo {
+    height: 2.75rem;
+  }
+
+  &__hero-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+  }
+
+  &__text {
+    align-self: center;
+    flex: 0 0 40%;
+
+    @include respond(tab-port) {
+      text-align: center;
+      margin-bottom: 5rem;
+    }
+  }
+
+  &__image-box {
+    flex: 0 0 50%;
+  }
+
+  &__img {
+    width: 100%;
+  }
+}
